@@ -1,0 +1,8 @@
+# Binaries 
+*.deb
+*.eopkg
+*.rpm
+*.tar.*
+
+
+
