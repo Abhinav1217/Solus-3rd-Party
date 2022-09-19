@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sublime-merge</Name>
+        <Homepage>https://www.sublimemerge.com/</Homepage>
+        <Packager>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Packager>
+        <License>Proprietary</License>
+        <License>EULA</License>
+        <PartOf>programming</PartOf>
+        <Summary xml:lang="en">Git Client, done Sublime. </Summary>
+        <Description xml:lang="en"> Git Client, done Sublime. </Description>
+        <Archive sha1sum="ed708f9526b7a50630f4f1f3f795a11ff3bd4620" type="binary">https://download.sublimetext.com/sublime_merge_build_2077_x64.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>sublime-merge</Name>
+        <Summary xml:lang="en">Git Client, done Sublime. </Summary>
+        <Description xml:lang="en"> Git Client, done Sublime. </Description>
+        <PartOf>programming</PartOf>
+        <Files>
+            <Path fileType="data">/opt/sublime_merge</Path>
+            <Path fileType="data">/usr/bin/sublime_merge</Path>
+            <Path fileType="data">/usr/share/applications/sublime_merge.desktop</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/sublime_merge.desktop">sublime_merge.desktop</AdditionalFile>
+        </AdditionalFiles>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2022-08-22</Date>
+            <Version>2077</Version>
+            <Comment>Update to SM Build 2077</Comment>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2021-07-18</Date>
+            <Version>4113</Version>
+            <Comment>Update to SM Build 2059</Comment>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
