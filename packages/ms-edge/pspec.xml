@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Microsoft Edge</Name>
+        <Homepage>https://www.microsoft.com/en-us/edge</Homepage>
+        <Packager>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Packager>
+        <Summary xml:lang="en">The web browser from Microsoft</Summary>
+        <Description xml:lang="en">MS-Edge is next generation, chromium based web browser from microsoft.</Description>
+        <License>Proprietary</License>
+        <License>EULA</License>
+        <PartOf>internet</PartOf>
+        <Archive sha1sum="f47741dc851cb0ba64c1e6fd09c6cac38a74df5f" type="binary">
+            https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_105.0.1343.42-1_amd64.deb
+        </Archive>
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+        </BuildDependencies>
+
+    </Source>
+
+
+    <Package>
+        <Name>microsoft-edge-stable</Name>
+        <Icon>microsoft-edge</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/gnome-control-center</Path>
+            <Path fileType="data">/usr/share/menu</Path>
+            <Path fileType="executable">/opt/microsoft/msedge</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2022-09-20 </Date>
+            <Version>105.0.1343.42</Version>
+            <Comment>Microsoft edge stable</Comment>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
