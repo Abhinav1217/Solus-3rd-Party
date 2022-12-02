@@ -13,8 +13,8 @@
         <License>Proprietary</License>
         <License>EULA</License>
         <PartOf>internet</PartOf>
-        <Archive sha1sum="f47741dc851cb0ba64c1e6fd09c6cac38a74df5f" type="binary">
-            https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_105.0.1343.42-1_amd64.deb
+        <Archive sha1sum="93762bcd69afdcdbd4a94b18f8f38687633c38a2" type="binary">
+            https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_107.0.1418.62-1_amd64.deb
         </Archive>
         <BuildDependencies>
             <Dependency>libxscrnsaver</Dependency>
@@ -46,6 +46,15 @@
     </Package>
 
     <History>
+        
+        <Update release="2">
+            <Date>2022-12-01 </Date>
+            <Version>107.0.1418.62</Version>
+            <Comment>Microsoft edge stable</Comment>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Update>
+
         <Update release="1">
             <Date>2022-09-20 </Date>
             <Version>105.0.1343.42</Version>

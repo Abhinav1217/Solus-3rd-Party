@@ -4,5 +4,5 @@
 *.rpm
 *.tar.*
 
-
-
+*/test/*
+test
