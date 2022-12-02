@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Zoom Client</Name>
+        <Homepage>https://zoom.us/</Homepage>
+        <Packager>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Packager>
+        <Summary xml:lang="en">The trending video conferencing tool</Summary>
+        <Description xml:lang="en">Zoom is a video conference software.</Description>
+        <License>Proprietary</License>
+        <License>EULA</License>
+        <PartOf>internet</PartOf>
+        <Archive sha1sum="979cde00a5423acc8c54e9741ab8eb9aa8b38cba" type="binary">
+            https://cdn.zoom.us/prod/5.12.9.367/zoom_amd64.deb
+        </Archive>
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+            <Dependency>libpng12</Dependency>
+            <Dependency>qt5-webkit</Dependency>
+            <Dependency>qt5-x11extras</Dependency>
+            <Dependency>qt5-multimedia</Dependency>
+            <Dependency>qt5-quickcontrols</Dependency>
+            <Dependency>zlib-minizip</Dependency>
+        </BuildDependencies>
+
+    </Source>
+
+
+    <Package>
+        <Name>zoom-client</Name>
+        <Icon>Zoom</Icon>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="executable">/opt/zoom/ZoomLauncher</Path>
+            <Path fileType="data">/opt/zoom/*</Path> 
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2022-12-01 </Date>
+            <Version>5.12.9.367</Version>
+            <Comment>Zoom Client</Comment>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Update>        
+        <Update release="1">
+            <Date>2022-09-20 </Date>
+            <Version>5.11.10.4400</Version>
+            <Comment>Zoom Client</Comment>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
