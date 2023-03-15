@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "https://getsol.us/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>Darling</Name>
+        <Homepage>https://www.darlinghq.org/</Homepage>
+        <Packager>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Packager>
+        <Summary xml:lang="en">Like wine, but for OSX packages</Summary>
+        <Description xml:lang="en">
+            Darling is a translation layer that lets you run macOS software on Linux.
+            Currently in 'Alpha'.
+        </Description>
+        <License>GPL3</License>
+        <PartOf>Utilities</PartOf>
+        <Archive sha1sum="1756a7272ba864342d08b24c4deae173ed78c693" type="binary">
+https://github.com/darlinghq/darling/releases/download/v0.1.20230310_update_sources_11_5/darling_0.1.20230310.jammy_amd64.deb        </Archive>
+        <BuildDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>binutils</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>ninja</Dependency>
+        </BuildDependencies>
+
+    </Source>
+
+
+    <Package>
+        <Name>darling</Name>
+        <!-- <Icon>darling</Icon> -->
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/appdata</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/gnome-control-center</Path>
+            <Path fileType="data">/usr/share/menu</Path>
+            <Path fileType="executable">/opt/microsoft/msedge</Path>
+        </Files>
+        <RuntimeDependencies>
+            <Dependency>libxscrnsaver</Dependency>
+            <Dependency>gconf</Dependency>
+        </RuntimeDependencies>
+    </Package>
+
+    <History>
+        
+        <Update release="1">
+            <Date>2023-03-15 </Date>
+            <Version>0.1.20230310</Version>
+            <Comment>First release of Darling</Comment>
+            <Name>Abhinav Kulshreshtha</Name>
+            <Email>AbhinavOther@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

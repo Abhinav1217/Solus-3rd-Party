@@ -32,3 +32,13 @@ sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/Abhinav1217/Solu
 
 sudo eopkg it zoom*.eopkg; sudo rm zoom*.eopkg
 ```
+
+## Darling (alpha)
+
+There are no snap or flatpak or appimage available.
+
+```
+sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/Abhinav1217/Solus-3rd-Party/main/packages/darling/pspec.xml
+
+sudo eopkg it darling*.eopkg; sudo rm darling*.eopkg
+```
